@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0030DA" />
+  <title>The Cube Studio — Разработка веб‑решений</title>
+  <meta name="description" content="The Cube Studio — создаём быстрые и масштабируемые веб‑решения для бизнеса любого типа: сайты, веб‑приложения, интеграции." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="На главную">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contacts" class="btn btn--sm btn--primary">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Веб‑решения для бизнеса любой сложности</h1>
+          <p class="hero__subtitle">Проектируем, разрабатываем и сопровождаем сайты и веб‑приложения: от лендингов до высоконагруженных платформ.</p>
+          <div class="hero__cta">
+            <a href="#contacts" class="btn btn--primary btn--lg">Обсудить проект</a>
+            <a href="#portfolio" class="btn btn--ghost btn--lg">Смотреть кейсы</a>
+          </div>
+          <ul class="hero__bullets">
+            <li>Фокус на скорость и SEO</li>
+            <li>Прозрачные сроки и бюджет</li>
+            <li>Поддержка и развитие</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="cube">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section__title">Что мы делаем</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Сайты и лендинги</h3>
+            <p>Современный дизайн, адаптивная верстка, оптимизация загрузки, интеграция с аналитикой.</p>
+          </article>
+          <article class="card">
+            <h3>Веб‑приложения</h3>
+            <p>SPA/SSR, архитектура, API, авторизация, роли, интеграции с внешними сервисами.</p>
+          </article>
+          <article class="card">
+            <h3>Поддержка и развитие</h3>
+            <p>Мониторинг, обновления, A/B‑тесты, улучшение конверсии и производительности.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section__title">Тарифы</h2>
+        <div class="pricing__grid">
+          <article class="tariff">
+            <h3 class="tariff__title">Start</h3>
+            <p class="tariff__price">от 2000 BYN</p>
+            <ul class="tariff__list">
+              <li>Лендинг до 5 блоков</li>
+              <li>Адаптивная верстка</li>
+              <li>Базовая SEO‑оптимизация</li>
+              <li>Подключение аналитики</li>
+            </ul>
+            <a href="#contacts" class="btn btn--primary btn--full">Выбрать</a>
+          </article>
+
+          <article class="tariff tariff--featured" aria-label="Рекомендуемый план">
+            <div class="badge">Топ выбор</div>
+            <h3 class="tariff__title">Business</h3>
+            <p class="tariff__price">от 4200 BYN</p>
+            <ul class="tariff__list">
+              <li>Корпоративный сайт или магазин</li>
+              <li>Интеграция с CRM/оплатой</li>
+              <li>Оптимизация скорости</li>
+              <li>1 месяц поддержки</li>
+            </ul>
+            <a href="#contacts" class="btn btn--primary btn--full">Выбрать</a>
+          </article>
+
+          <article class="tariff">
+            <h3 class="tariff__title">Custom</h3>
+            <p class="tariff__price">по запросу</p>
+            <ul class="tariff__list">
+              <li>Сложные веб‑приложения</li>
+              <li>Микросервисы, очереди</li>
+              <li>Высокая нагрузка</li>
+              <li>Долгосрочная поддержка</li>
+            </ul>
+            <a href="#contacts" class="btn btn--primary btn--full">Запросить смету</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Портфолио</h2>
+        <div class="portfolio__grid">
+          <figure class="work" tabindex="0" data-caption="E‑commerce: рост конверсии на 28%">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Проект e‑commerce" loading="lazy" />
+            <figcaption>E‑commerce</figcaption>
+          </figure>
+          <figure class="work" tabindex="0" data-caption="SaaS: масштабирование и перфоманс">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="SaaS платформа" loading="lazy" />
+            <figcaption>SaaS платформа</figcaption>
+          </figure>
+          <figure class="work" tabindex="0" data-caption="Финтех: безопасные платежи">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Финтех решение" loading="lazy" />
+            <figcaption>Финтех</figcaption>
+          </figure>
+          <figure class="work" tabindex="0" data-caption="Медиа: высокий трафик и SEO">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Медиа проект" loading="lazy" />
+            <figcaption>Медиа</figcaption>
+          </figure>
+          <figure class="work" tabindex="0" data-caption="EduTech: интерактив и геймификация">
+            <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop" alt="Образовательный проект" loading="lazy" />
+            <figcaption>EduTech</figcaption>
+          </figure>
+          <figure class="work" tabindex="0" data-caption="IoT: реальное время и мониторинг">
+            <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop" alt="IoT система" loading="lazy" />
+            <figcaption>IoT</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__backdrop" id="modalBackdrop"></div>
+        <div class="modal__dialog" role="document">
+          <button class="modal__close" id="modalClose" aria-label="Закрыть">×</button>
+          <img class="modal__img" id="modalImg" alt="Просмотр работы" />
+          <p class="modal__caption" id="modalCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__content">
+          <h2 class="section__title">Контакты</h2>
+          <p>Расскажите о задаче — предложим решение и бюджет в течение 24 часов.</p>
+          <ul class="contact__list">
+            <li><a href="mailto:hello@thecubestudio.dev">hello@thecubestudio.dev</a></li>
+            <li><a href="tel:+375171234567">+375171234567</a></li>
+            <li>Минск / Удалённо</li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+            <span class="form__error" data-for="name"></span>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required />
+            <span class="form__error" data-for="email"></span>
+          </div>
+          <div class="form__field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Опишите проект" required></textarea>
+            <span class="form__error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+          <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="map" aria-hidden="true">
+        <iframe title="Карта офиса" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=27.4%2C53.8%2C27.7%2C54.0&amp;layer=mapnik"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--muted">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+      <nav class="footer__nav">
+        <a href="#services">Услуги</a>
+        <a href="#pricing">Цены</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> The Cube Studio. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
