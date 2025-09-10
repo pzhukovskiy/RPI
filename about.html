@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0030DA" />
+  <title>О нас — The Cube Studio</title>
+  <meta name="description" content="Команда The Cube Studio — опытные разработчики, создающие качественные веб-решения для бизнеса любого масштаба." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="На главную">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#services">Услуги</a></li>
+          <li><a href="index.html#pricing">Цены</a></li>
+          <li><a href="index.html#portfolio">Портфолио</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="index.html#contacts" class="btn btn--sm btn--primary">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">О команде The Cube Studio</h1>
+          <p class="hero__subtitle">Мы — команда опытных разработчиков, которые создают веб-решения, помогающие бизнесу расти и развиваться.</p>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="cube">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section__title">Наша команда</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Frontend разработчики</h3>
+            <p>Специализируются на React, Vue.js, TypeScript. Создают быстрые и отзывчивые пользовательские интерфейсы с фокусом на UX/UI.</p>
+          </article>
+          <article class="card">
+            <h3>Backend разработчики</h3>
+            <p>Работают с Node.js, Python, PHP. Строят масштабируемые API, микросервисы и интегрируют сложные системы.</p>
+          </article>
+          <article class="card">
+            <h3>DevOps инженеры</h3>
+            <p>Настраивают CI/CD, мониторинг, контейнеризацию. Обеспечивают стабильную работу и безопасность проектов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Наш подход</h2>
+        <div class="pricing__grid">
+          <article class="tariff">
+            <h3 class="tariff__title">Исследование</h3>
+            <p class="tariff__price">Анализ</p>
+            <ul class="tariff__list">
+              <li>Изучаем бизнес-задачи</li>
+              <li>Анализируем конкурентов</li>
+              <li>Определяем целевую аудиторию</li>
+              <li>Планируем архитектуру</li>
+            </ul>
+          </article>
+
+          <article class="tariff tariff--featured" aria-label="Основной процесс">
+            <div class="badge">Основа</div>
+            <h3 class="tariff__title">Разработка</h3>
+            <p class="tariff__price">Создание</p>
+            <ul class="tariff__list">
+              <li>Прототипирование и дизайн</li>
+              <li>Адаптивная верстка</li>
+              <li>Программирование функций</li>
+              <li>Тестирование и отладка</li>
+            </ul>
+          </article>
+
+          <article class="tariff">
+            <h3 class="tariff__title">Запуск</h3>
+            <p class="tariff__price">Результат</p>
+            <ul class="tariff__list">
+              <li>Деплой на сервер</li>
+              <li>Настройка мониторинга</li>
+              <li>Обучение команды</li>
+              <li>Техническая поддержка</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section__title">Технологии</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Frontend</h3>
+            <p>React, Vue.js, Next.js, TypeScript, Tailwind CSS, Webpack, Vite. Создаем современные SPA и SSR приложения.</p>
+          </article>
+          <article class="card">
+            <h3>Backend</h3>
+            <p>Node.js, Python (Django/FastAPI), PHP (Laravel), PostgreSQL, MongoDB, Redis, Docker, Kubernetes.</p>
+          </article>
+          <article class="card">
+            <h3>Инфраструктура</h3>
+            <p>AWS, Google Cloud, DigitalOcean, Nginx, Let's Encrypt, GitHub Actions, мониторинг и логирование.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__content">
+          <h2 class="section__title">Почему выбирают нас</h2>
+          <p>Мы не просто пишем код — мы создаем решения, которые работают на результат вашего бизнеса.</p>
+          <ul class="contact__list">
+            <li>🎯 Фокус на бизнес-целях</li>
+            <li>⚡ Быстрая разработка</li>
+            <li>🔒 Безопасность и надежность</li>
+            <li>📈 Масштабируемость</li>
+            <li>🛠️ Поддержка 24/7</li>
+          </ul>
+        </div>
+
+        <div class="form">
+          <h3>Обсудить проект</h3>
+          <form id="contactForm" novalidate>
+            <div class="form__field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+              <span class="form__error" data-for="name"></span>
+            </div>
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required />
+              <span class="form__error" data-for="email"></span>
+            </div>
+            <div class="form__field">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" placeholder="Опишите проект" required></textarea>
+              <span class="form__error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+            <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo logo--muted">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+      <nav class="footer__nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#pricing">Цены</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <a href="blog.html">Блог</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> The Cube Studio. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

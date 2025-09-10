@@ -1,8 +1,6 @@
-// Инициализация года в футере
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Бургер-меню
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 if (navToggle && navMenu) {
@@ -18,7 +16,6 @@ if (navToggle && navMenu) {
   });
 }
 
-// Плавный скролл
 const links = document.querySelectorAll('a[href^="#"]');
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
@@ -34,7 +31,6 @@ links.forEach((link) => {
   });
 });
 
-// Модалка портфолио
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modalImg');
 const modalCaption = document.getElementById('modalCaption');
@@ -70,7 +66,6 @@ if (modal) {
   });
 }
 
-// Кнопка "вверх"
 const toTop = document.getElementById('toTop');
 if (toTop) {
   const toggleToTop = () => {
@@ -82,7 +77,7 @@ if (toTop) {
   toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-// Валидация формы
+
 const form = document.getElementById('contactForm');
 if (form) {
   const showError = (name, text) => {

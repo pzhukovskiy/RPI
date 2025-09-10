@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0030DA" />
+  <title>Блог — The Cube Studio</title>
+  <meta name="description" content="Статьи о веб-разработке, кейсы проектов, новости технологий и советы по созданию качественных веб-решений." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="На главную">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#services">Услуги</a></li>
+          <li><a href="index.html#pricing">Цены</a></li>
+          <li><a href="index.html#portfolio">Портфолио</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="index.html#contacts" class="btn btn--sm btn--primary">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Блог о веб-разработке</h1>
+          <p class="hero__subtitle">Кейсы, советы, новости технологий и практический опыт создания качественных веб-решений.</p>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="cube">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section__title">Последние статьи</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Оптимизация производительности React приложений</h3>
+            <p>Практические советы по ускорению загрузки и улучшению пользовательского опыта в React-приложениях. Мемоизация, ленивая загрузка, код-сплиттинг.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">15 декабря 2024</div>
+          </article>
+          <article class="card">
+            <h3>Микросервисная архитектура: плюсы и минусы</h3>
+            <p>Когда стоит переходить на микросервисы, а когда лучше остаться на монолите. Реальные кейсы из нашего опыта разработки.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">8 декабря 2024</div>
+          </article>
+          <article class="card">
+            <h3>SEO для SPA: как не потерять трафик</h3>
+            <p>Особенности поисковой оптимизации одностраничных приложений. SSR, SSG, мета-теги и структурированные данные.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">1 декабря 2024</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Кейсы проектов</h2>
+        <div class="pricing__grid">
+          <article class="tariff">
+            <h3 class="tariff__title">E-commerce платформа</h3>
+            <p class="tariff__price">+28% конверсия</p>
+            <ul class="tariff__list">
+              <li>Next.js + TypeScript</li>
+              <li>Stripe интеграция</li>
+              <li>Оптимизация Core Web Vitals</li>
+              <li>Мобильная адаптация</li>
+            </ul>
+          </article>
+
+          <article class="tariff tariff--featured" aria-label="Популярный кейс">
+            <div class="badge">Топ кейс</div>
+            <h3 class="tariff__title">SaaS платформа</h3>
+            <p class="tariff__price">10k+ пользователей</p>
+            <ul class="tariff__list">
+              <li>React + Node.js</li>
+              <li>Микросервисная архитектура</li>
+              <li>Real-time уведомления</li>
+              <li>Масштабирование до 1M запросов/день</li>
+            </ul>
+          </article>
+
+          <article class="tariff">
+            <h3 class="tariff__title">Финтех решение</h3>
+            <p class="tariff__price">99.9% uptime</p>
+            <ul class="tariff__list">
+              <li>Vue.js + Python</li>
+              <li>Банковские API</li>
+              <li>PCI DSS соответствие</li>
+              <li>Мониторинг 24/7</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section__title">Технические статьи</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>TypeScript: типизация в реальных проектах</h3>
+            <p>Как правильно использовать TypeScript для создания надежного и поддерживаемого кода. Практические примеры и лучшие практики.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">24 ноября 2024</div>
+          </article>
+          <article class="card">
+            <h3>Docker в продакшене: настройка и мониторинг</h3>
+            <p>Контейнеризация приложений, оркестрация с Kubernetes, мониторинг логов и метрик в продакшене.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">17 ноября 2024</div>
+          </article>
+          <article class="card">
+            <h3>GraphQL vs REST: выбираем API архитектуру</h3>
+            <p>Сравнение подходов к проектированию API. Когда использовать GraphQL, а когда REST будет оптимальным решением.</p>
+            <div style="margin-top: 12px; color: var(--muted); font-size: 14px;">10 ноября 2024</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__content">
+          <h2 class="section__title">Подписаться на обновления</h2>
+          <p>Получайте новые статьи и кейсы прямо на почту. Без спама, только полезный контент.</p>
+          <ul class="contact__list">
+            <li>📧 Новые статьи каждую неделю</li>
+            <li>🎯 Практические советы</li>
+            <li>📊 Реальные кейсы</li>
+            <li>🚀 Новости технологий</li>
+          </ul>
+        </div>
+
+        <div class="form">
+          <h3>Подписаться на рассылку</h3>
+          <form id="contactForm" novalidate>
+            <div class="form__field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+              <span class="form__error" data-for="name"></span>
+            </div>
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required />
+              <span class="form__error" data-for="email"></span>
+            </div>
+            <div class="form__field">
+              <label for="message">Интересы</label>
+              <textarea id="message" name="message" rows="3" placeholder="Какие темы вас интересуют?" required></textarea>
+              <span class="form__error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Подписаться</button>
+            <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo logo--muted">
+        <span class="logo__cube" aria-hidden="true">▣</span>
+        <span class="logo__text">The Cube Studio</span>
+      </a>
+      <nav class="footer__nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#pricing">Цены</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <a href="about.html">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> The Cube Studio. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
